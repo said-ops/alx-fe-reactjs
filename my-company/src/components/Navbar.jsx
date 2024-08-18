@@ -9,7 +9,9 @@ function Navbar() {
             display:'flex',
             gap:'15px',
             color:'black',
-            listStyle:'none'
+            listStyle:'none',
+            backgroundColor:'cyan',
+            justifyContent:'space-evenly'
         }
     }>
         <li><Link style={{textDecoration:'none'}} to='/'>Home</Link></li>
