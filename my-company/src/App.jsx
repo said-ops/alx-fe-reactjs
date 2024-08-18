@@ -1,11 +1,12 @@
 
-import About from './About';
+import About from './components/About';
 import './App.css';
-import Contact from './contact';
-import Home from './Home';
-import Navbar from './Navbar';
-import Services from './Services';
+
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Services from './components/Services';
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
+import Contact from './components/Contact';
 
 
 function App() {

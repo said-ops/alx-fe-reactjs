@@ -45,7 +45,7 @@ function Contact() {
         />
         <button type="submit">Send Message</button>
       </form>
-      {formData.name ? <h3>Thanks for contacting us : {formData.name}</h3> : "enter infos"}
+      {formData.name ? <h3>Thanks for contacting us : {formData.name}</h3> : ""}
     </div>
   );
 }
