@@ -6,13 +6,15 @@ import { useState } from 'react';
     const updateRecipe = useRecipeStore(state => state.updateRecipe);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const recipeId = useParams()
+    const {recipeId} = useParams()
+    const id = parseInt(recipeId,10)
 
     const handleSubmit = (event) => {
       event.preventDefault();
-      updateRecipe(recipeId,title,description)
+      updateRecipe(id,title,description)
       setTitle('');
       setDescription('');
+      console.log(useRecipeStore.getState().recipes)
     };
 
     return (

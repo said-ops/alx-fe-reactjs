@@ -4,13 +4,14 @@ import { useParams } from "react-router-dom";
 
 const DeleteRecipeButton = () =>{
     const navigate = useNavigate()
-    const recipeId = useParams()
-    const deleteRecipe = useRecipeStore(state=>state.deleteRecipe)
+    const {recipeId} = useParams()
+    const id =parseInt(recipeId,10)
+    const deleteRecipe = useRecipeStore((state)=>state.deleteRecipe)
         return(
             <div>
                 <button
-                onClick={()=>{deleteRecipe(recipeId)
-                    navigate('/home')
+                onClick={()=>{deleteRecipe(id)
+                    navigate('/')
                 }}
                 >Delete recipe</button>
             </div>

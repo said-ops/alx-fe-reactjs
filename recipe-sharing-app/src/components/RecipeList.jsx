@@ -12,7 +12,6 @@ const RecipeList = () => {
           <h3>{recipe.title}</h3>
           <p>{recipe.description}</p>
           <Link to={`/Recipe-Details/${recipe.id}`}>Details</Link>
-          <Link to='/home'>home</Link>
         </div>
       ))}
     </div>
