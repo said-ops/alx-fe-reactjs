@@ -1,10 +1,12 @@
 import { useState } from 'react';
   import  useRecipeStore  from './recipeStore.js';
+  import { useParams } from 'react-router-dom';
 
-  const EditRecipeForm = ({recipeId}) => {
+  const EditRecipeForm = () => {
     const updateRecipe = useRecipeStore(state => state.updateRecipe);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    const recipeId = useParams()
 
     const handleSubmit = (event) => {
       event.preventDefault();

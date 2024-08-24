@@ -10,3 +10,8 @@ form{
     flex-direction: column;
     width: 400px;
 }
+.recipe{
+    border: 2px dashed brown;
+    width: 400px;
+    text-align: center;
+}
