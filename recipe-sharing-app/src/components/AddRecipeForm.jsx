@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
   import  useRecipeStore  from './recipeStore.js';
   import {Link} from 'react-router-dom'
-import RecommendationsList from './RecommendationsList .jsx';
+import RecommendationsList from './RecommendationsList.jsx';
 
   const AddRecipeForm = () => {
     const addRecipe = useRecipeStore(state => state.addRecipe);
