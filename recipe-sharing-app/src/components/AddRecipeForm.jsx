@@ -1,11 +1,13 @@
 import { useState } from 'react';
   import  useRecipeStore  from './recipeStore.js';
   import {Link} from 'react-router-dom'
+import RecommendationsList from './RecommendationsList .jsx';
 
   const AddRecipeForm = () => {
     const addRecipe = useRecipeStore(state => state.addRecipe);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    const generateRecommendations = useRecipeStore(state=>state.generateRecommendations)
 
     const handleSubmit = (event) => {
       event.preventDefault();
@@ -29,6 +31,8 @@ import { useState } from 'react';
         />
         <button type="submit">Add Recipe</button>
         <Link to='/Favorites'>My Favorites</Link>
+        <Link to='/recommendations' ><button 
+        onClick={e=>generateRecommendations()}>recommendation</button> </Link>
       </form>
     );
   };
