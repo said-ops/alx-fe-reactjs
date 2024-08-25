@@ -1,5 +1,6 @@
 import { useState } from 'react';
   import  useRecipeStore  from './recipeStore.js';
+  import {Link} from 'react-router-dom'
 
   const AddRecipeForm = () => {
     const addRecipe = useRecipeStore(state => state.addRecipe);
@@ -27,6 +28,7 @@ import { useState } from 'react';
           placeholder="Description"
         />
         <button type="submit">Add Recipe</button>
+        <Link to='/Favorites'>My Favorites</Link>
       </form>
     );
   };
