@@ -1,17 +1,22 @@
 
 #root{
-    width: 100%;
+    width: 400px;
     display: flex;
     place-content: center;
     flex-direction: column;
+}
+body{
+    display: flex;
+    justify-content: center;
 }
 form{
     display: flex;
     flex-direction: column;
     width: 400px;
 }
+
 .recipe{
     border: 2px dashed brown;
-    width: 400px;
+    
     text-align: center;
 }
