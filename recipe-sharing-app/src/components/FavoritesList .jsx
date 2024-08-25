@@ -6,6 +6,7 @@ const FavoritesList = () => {
     state.recipes.find(recipe => recipe.id == id)
   ));
 
+  
   return (
     <div>
       <h2>My Favorites</h2>
