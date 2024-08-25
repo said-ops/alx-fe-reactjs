@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
   import  useRecipeStore  from './recipeStore.js';
   import {Link} from 'react-router-dom'
 import RecommendationsList from './RecommendationsList .jsx';
@@ -15,7 +15,6 @@ import RecommendationsList from './RecommendationsList .jsx';
       setTitle('');
       setDescription('');
     };
-
     return (
       <form onSubmit={handleSubmit}>
         <input
@@ -32,7 +31,7 @@ import RecommendationsList from './RecommendationsList .jsx';
         <button type="submit">Add Recipe</button>
         <Link to='/Favorites'>My Favorites</Link>
         <Link to='/recommendations' ><button 
-        onClick={e=>generateRecommendations()}>recommendation</button> </Link>
+        >recommendation</button> </Link>
       </form>
     );
   };
