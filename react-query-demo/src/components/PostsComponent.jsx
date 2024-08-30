@@ -16,10 +16,10 @@ function PostsComponent () {
     {isLoading && <div>Loading...</div>}
     {error && <div>Error while fetching posts</div>}
     {data && data.slice(0,visibleCount).map(item=>(
-      <div key={item.key}>
-      <div key={item.id}>user id : {item.userId}</div>
-      <div key={item.id}>post title :{item.title}</div>
-      <div key={item.id}>post body :{item.body}</div>
+      <div key={item.id}>
+      <div >user id : {item.userId}</div>
+      <div >post title :{item.title}</div>
+      <div >post body :{item.body}</div>
       </div>
     )) }
     <button onClick={()=>setCount(visibleCount + 5)}>load More</button>
