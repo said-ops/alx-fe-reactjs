@@ -4,7 +4,15 @@
   padding: 2rem;
   text-align: center;
 }
-
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.error{
+  color: red;
+  font-style: italic;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
