@@ -19,7 +19,7 @@ function PostsComponent () {
     <>
     <h1>React Query</h1>
     {isLoading && <div>Loading...</div>}
-    {isError && <div>Error while fetching posts</div>}
+    {isError && <div>{error.message}</div>}
     {data && data.slice(0,visibleCount).map(item=>(
       <div key={item.id}>
       <div >user id : {item.userId}</div>
