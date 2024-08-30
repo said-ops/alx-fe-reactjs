@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 function RegistrationForm() {
     const [formData,setFormData]=useState({email:'',username:'',password:''})
+    const {email,username,password}=formData
     const [error,setError]=useState({errorName:false,errorEmail:false,errorPass:false})
 
     const handleChange = (e)=>{
@@ -26,13 +27,13 @@ function RegistrationForm() {
     <>
     <form onSubmit={handleSubmit}>
         <label htmlFor="username" >User Name</label>
-        <input type="text" id='username' name='username' onChange={handleChange} value={formData.username} />
+        <input type="text" id='username' name='username' onChange={handleChange} value={username} />
         {error.errorName? <div className='error'>required</div> :''}
         <label htmlFor="email">Email</label>
-        <input type="email" id='email' name='email' onChange={handleChange}  value={formData.email}/>
+        <input type="email" id='email' name='email' onChange={handleChange}  value={email}/>
         {error.errorEmail ? <div className='error'>required</div> :''}
         <label htmlFor="password">Password</label>
-        <input type="password" name='password' id='password' onChange={handleChange} value={formData.password} />
+        <input type="password" name='password' id='password' onChange={handleChange} value={password} />
         {error.errorPass? <div className='error'>required</div> :''}
         <button type='submit'>submit</button>
     </form>
