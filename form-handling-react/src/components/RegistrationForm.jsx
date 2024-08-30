@@ -13,8 +13,8 @@ function RegistrationForm() {
     const handleSubmit = (e)=>{
         e.preventDefault()
         setErrors({errorEmail:false,errorName:false,errorPass:false})
-        if(!email) setErrors(prev=>({...prev,errorEmail:true}))
         if(!username) setErrors(prev=>({...prev,errorName:true}))
+        if(!email) setErrors(prev=>({...prev,errorEmail:true}))
         if(!password) setErrors(prev=>({...prev,errorPass:true}))
         if(email  && username  && password)  
         {
