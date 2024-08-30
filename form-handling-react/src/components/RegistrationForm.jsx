@@ -25,6 +25,7 @@ function RegistrationForm() {
     }
   return (
     <>
+    <h1>Controlled components</h1>
     <form onSubmit={handleSubmit}>
         <label htmlFor="username" >User Name</label>
         <input type="text" id='username' name='username' onChange={handleChange} value={username} />
