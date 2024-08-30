@@ -12,9 +12,9 @@ function FormikForm() {
     <Formik
         initialValues={{email:'',username:'',password:''}}
         validationSchema={Yup.object({
-          email:Yup.string().email('Invalid Email Address').required('Required'),
-          username:Yup.string().max(25,'must be 25 characters or less').required('Required'),
-          password:Yup.string().min(8,'must be 8 characters or more').required('Required')
+          email:Yup.string().required('Required').email('Invalid Email Address'),
+          username:Yup.string().required('Required').max(25,'must be 25 characters or less'),
+          password:Yup.string().required('Required').min(8,'must be 8 characters or more')
       })}
         onSubmit={values=>{console.log(values)
         }}
