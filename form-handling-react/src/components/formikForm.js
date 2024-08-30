@@ -4,18 +4,18 @@ import * as Yup from 'yup'
 
 function FormikForm() {
 
-    const validationSchema = Yup.object({
-        email:Yup.string().email('Invalid Email Address').required('Required'),
-        username:Yup.string().max(25,'must be 25 characters or less').required('Required'),
-        password:Yup.string().min(8,'must be 8 characters or more').required('Required')
-    })
+    
 
   return (
     <>
         <h1>Formik form</h1>
     <Formik
         initialValues={{email:'',username:'',password:''}}
-        validationSchema={validationSchema}
+        validationSchema={Yup.object({
+          email:Yup.string().email('Invalid Email Address').required('Required'),
+          username:Yup.string().max(25,'must be 25 characters or less').required('Required'),
+          password:Yup.string().min(8,'must be 8 characters or more').required('Required')
+      })}
         onSubmit={values=>{console.log(values)
         }}
     >
