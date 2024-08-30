@@ -7,7 +7,12 @@ function PostsComponent () {
     const fetcher = ()=>fetch('https://jsonplaceholder.typicode.com/posts').then(res=>res.json())
    const {data,isError,error,isLoading} = useQuery({
     queryKey:['fetchPosts'],
-    queryFn:fetcher
+    queryFn:fetcher,
+    queryFn: fetcher,
+    cacheTime: 5 * 60 * 1000,            
+    staleTime: 60 * 1000,                
+    refetchOnWindowFocus: false,         
+    keepPreviousData: true,
    })
    const [visibleCount,setCount]=useState(10)
   return (
