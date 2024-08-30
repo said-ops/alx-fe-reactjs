@@ -5,7 +5,7 @@ import { useQuery } from 'react-query'
 function PostsComponent () {
 
     const fetcher = ()=>fetch('https://jsonplaceholder.typicode.com/posts').then(res=>res.json())
-   const {data,error,isLoading} = useQuery({
+   const {data,isError,isLoading} = useQuery({
     queryKey:['fetchPosts'],
     queryFn:fetcher
    })
@@ -14,7 +14,7 @@ function PostsComponent () {
     <>
     <h1>React Query</h1>
     {isLoading && <div>Loading...</div>}
-    {error && <div>Error while fetching posts</div>}
+    {isError && <div>Error while fetching posts</div>}
     {data && data.slice(0,visibleCount).map(item=>(
       <div key={item.id}>
       <div >user id : {item.userId}</div>
