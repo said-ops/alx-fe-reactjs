@@ -13,10 +13,10 @@ function RegistrationForm() {
     const handleSubmit = (e)=>{
         e.preventDefault()
         setError({errorEmail:false,errorName:false,errorPass:false})
-        if(!formData.email) setError(prev=>({...prev,errorEmail:true}))
-        if(!formData.username) setError(prev=>({...prev,errorName:true}))
-        if(!formData.password) setError(prev=>({...prev,errorPass:true}))
-        if(formData.email  && formData.username  && formData.password)  
+        if(email) setError(prev=>({...prev,errorEmail:true}))
+        if(username) setError(prev=>({...prev,errorName:true}))
+        if(password) setError(prev=>({...prev,errorPass:true}))
+        if(email  && username  && password)  
         {
             console.log(formData)
             setFormData({email:'',username:'',password:''})
