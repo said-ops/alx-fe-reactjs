@@ -4,10 +4,10 @@ import { Navigate, Route, useLocation } from 'react-router-dom'
 function ProtectedRoute({element,...rest}) {
 
         const location = useLocation()
-    const isLogged = ()=>{
+    const usAuth = ()=>{
         return localStorage.getItem('loginToken') !==null
     }
-  return isLogged() ? (element) :(<Navigate to='/login' state={{from:location}} />)
+  return usAuth() ? (element) :(<Navigate to='/login' state={{from:location}} />)
 }
 
 export default ProtectedRoute
