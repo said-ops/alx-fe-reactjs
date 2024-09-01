@@ -9,11 +9,14 @@ function Profile() {
   let path = match ? match.pathnameBase : ""
   return (
     <>
+    <h2>Welcome to profile</h2>
       <nav>
         <ul>
           <li>
             <Link to={`${path}/settings`}>Profile Settings</Link>
-            <Link to={`${path}/details`}>Profile Details</Link>
+          </li>
+          <li>
+          <Link to={`${path}/details`}>Profile Details</Link>
           </li>
         </ul>
       </nav>
