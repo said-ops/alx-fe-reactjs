@@ -40,10 +40,11 @@ function TodoList() {
                 
                     <li key={todo.id}>
                         <input type="checkbox"
+                        id={todo.id}
                         checked={todo.completed}
                             onChange={()=>toggelTodo(todo.id)}
                         />
-                        <div>{todo.title}</div>
+                        <label htmlFor={todo.id}>{todo.title}</label>
                         <button onClick={()=>deleteTodo(todo.id)}>Delete</button>
                     </li>
             )
