@@ -17,7 +17,7 @@ function RecipeDetail() {
             <img 
             className='w-[150px] h-[150px]'
             src={recipe.image} alt={recipe.title} />
-            <h2 className='text-xl text-blue-400 font-bold'>Preparation Steps</h2>
+            <h2 className='text-xl text-blue-400 font-bold'>instructions</h2>
             <div>
                 {/* steps goes here */}
                 {recipe.steps? (
