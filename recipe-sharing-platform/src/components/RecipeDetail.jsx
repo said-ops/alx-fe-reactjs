@@ -18,7 +18,7 @@ function RecipeDetail() {
             className='w-[150px] h-[150px]'
             src={recipe.image} alt={recipe.title} />
             <h2 className='text-xl text-blue-400 font-bold'>instructions</h2>
-            <div>
+            <div className='shadow-xl p-2 rounded-sm'>
                 {/* steps goes here */}
                 {recipe.steps? (
                     recipe.steps.map((step,index)=>
@@ -32,7 +32,7 @@ function RecipeDetail() {
             <div>
                 {/* Ingredients goes here */}
                 
-            <div>
+            <div className='shadow-xl p-2 rounded-sm'>
                 {/* steps goes here */}
                 {recipe.ingredients
                 ? (
