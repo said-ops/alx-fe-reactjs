@@ -14,7 +14,7 @@ function HomePage() {
   return (
     <>
     <h1 className='text-4xl text-blue-800 font-bold'>Home Page</h1>
-    <section className='grid  place-items-center grid-cols-1 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6 lg:gap-4  p-4 md:gap-2 mt-4'>
+    <section className='grid  place-items-center grid-cols-1 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 lg:gap-4 xl:grid-cols-6  p-4 md:gap-2 mt-4'>
         {/* cards goes here */}
         {
             recipes.slice(0,visibleCount).map(recipe=>{
