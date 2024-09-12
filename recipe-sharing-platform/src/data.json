@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "title": "Beef Stroganoff",
+    "summary": "A Russian-inspired dish with tender beef strips and a creamy sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "title": "Pad Thai",
+    "summary": "A popular Thai stir-fried noodle dish with shrimp, peanuts, and a tangy sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "title": "Moussaka",
+    "summary": "A Greek casserole layered with eggplant, ground meat, and béchamel sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 6,
+    "title": "Sushi Rolls",
+    "summary": "Japanese rice rolls filled with seafood, vegetables, and sometimes tropical fruit.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 7,
+    "title": "Tacos al Pastor",
+    "summary": "Mexican street food with marinated pork, pineapple, and cilantro wrapped in a soft tortilla.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 8,
+    "title": "Vegetarian Lasagna",
+    "summary": "A hearty, meat-free lasagna layered with spinach, mushrooms, and ricotta cheese.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "title": "Ceviche",
+    "summary": "A South American seafood dish made from fresh fish marinated in citrus juices.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 10,
+    "title": "Butter Chicken",
+    "summary": "A rich and creamy curry made with tender chicken pieces and aromatic spices.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 11,
+    "title": "Fettuccine Alfredo",
+    "summary": "Italian pasta tossed with a creamy parmesan cheese sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 12,
+    "title": "Ratatouille",
+    "summary": "A French Provençal stewed vegetable dish made with eggplant, zucchini, and tomatoes.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 13,
+    "title": "Chicken Parmesan",
+    "summary": "Breaded chicken cutlets covered with marinara sauce and melted cheese.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 14,
+    "title": "Goulash",
+    "summary": "A Hungarian stew of meat and vegetables, seasoned with paprika and other spices.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 15,
+    "title": "Peking Duck",
+    "summary": "A famous Chinese dish featuring roasted duck with crispy skin and tender meat.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 16,
+    "title": "Shakshuka",
+    "summary": "A North African dish of poached eggs in a spiced tomato and pepper sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 17,
+    "title": "Lamb Rogan Josh",
+    "summary": "An aromatic lamb curry from Kashmir, slow-cooked with a blend of spices.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 18,
+    "title": "Falafel",
+    "summary": "Middle Eastern deep-fried balls made from ground chickpeas and herbs.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 19,
+    "title": "Pho",
+    "summary": "Vietnamese noodle soup with broth, rice noodles, herbs, and beef or chicken.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 20,
+    "title": "Paella",
+    "summary": "A Spanish rice dish with seafood, saffron, and vegetables.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 21,
+    "title": "Baklava",
+    "summary": "A sweet Turkish pastry made of layers of filo filled with chopped nuts and honey.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 22,
+    "title": "Gazpacho",
+    "summary": "A cold Spanish tomato-based soup, served with diced vegetables.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 23,
+    "title": "Chicken Shawarma",
+    "summary": "Marinated chicken roasted on a spit, served with pita bread and garlic sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 24,
+    "title": "Clam Chowder",
+    "summary": "A rich, creamy soup made with clams, potatoes, and onions.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 25,
+    "title": "Jambalaya",
+    "summary": "A spicy Louisiana dish made with rice, sausage, shrimp, and vegetables.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 26,
+    "title": "Coq au Vin",
+    "summary": "A classic French dish of chicken braised with wine, mushrooms, and bacon.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 27,
+    "title": "Ramen",
+    "summary": "A Japanese noodle soup with meat, eggs, and various toppings in a flavorful broth.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 28,
+    "title": "Biryani",
+    "summary": "An Indian dish made with spiced rice and meat, often chicken or lamb.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 29,
+    "title": "Miso Soup",
+    "summary": "A traditional Japanese soup with tofu, seaweed, and miso paste.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 30,
+    "title": "Stuffed Bell Peppers",
+    "summary": "Bell peppers filled with rice, vegetables, and ground meat, baked until tender.",
+    "image": "https://via.placeholder.com/150"
+  }
+]
