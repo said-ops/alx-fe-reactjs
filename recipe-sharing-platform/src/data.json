@@ -3,180 +3,764 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta or bacon",
+      "2 large eggs",
+      "50g Parmesan cheese",
+      "2 cloves garlic",
+      "Salt and black pepper",
+      "Olive oil"
+    ],
+    "steps": [
+      "1. Cook spaghetti according to package instructions.",
+      "2. In a pan, cook pancetta with garlic in olive oil until crispy.",
+      "3. In a bowl, whisk together eggs and Parmesan cheese.",
+      "4. Drain spaghetti and add it to the pan with pancetta.",
+      "5. Remove pan from heat and mix in the egg mixture, stirring quickly to avoid scrambling.",
+      "6. Season with salt and pepper to taste, and serve immediately."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g chicken breast",
+      "200g plain yogurt",
+      "1 tablespoon lemon juice",
+      "2 tablespoons tikka masala powder",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1 tablespoon ginger, minced",
+      "400g canned tomatoes",
+      "200ml cream",
+      "Cilantro for garnish",
+      "Salt and pepper",
+      "Oil"
+    ],
+    "steps": [
+      "1. Marinate chicken in yogurt, lemon juice, and tikka masala powder for at least 1 hour.",
+      "2. Grill or cook chicken until fully cooked, then set aside.",
+      "3. In a pan, heat oil and sauté onions, garlic, and ginger until soft.",
+      "4. Add tomatoes and cook until the mixture thickens.",
+      "5. Stir in cream and add the cooked chicken.",
+      "6. Simmer for 10 minutes, then garnish with cilantro and serve."
+    ]
   },
   {
     "id": 3,
     "title": "Beef Stroganoff",
     "summary": "A Russian-inspired dish with tender beef strips and a creamy sauce.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g beef sirloin, sliced",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "200g mushrooms, sliced",
+      "1 cup beef broth",
+      "1 cup sour cream",
+      "2 tablespoons flour",
+      "1 tablespoon Dijon mustard",
+      "Salt and pepper",
+      "Oil for cooking"
+    ],
+    "steps": [
+      "1. Heat oil in a pan and cook beef strips until browned.",
+      "2. Remove beef and set aside.",
+      "3. In the same pan, sauté onions, garlic, and mushrooms until soft.",
+      "4. Stir in flour and cook for 1 minute.",
+      "5. Add beef broth and mustard, stirring until thickened.",
+      "6. Return beef to the pan and stir in sour cream.",
+      "7. Simmer for 5 minutes, then season with salt and pepper. Serve with rice or noodles."
+    ]
   },
   {
     "id": 4,
     "title": "Pad Thai",
     "summary": "A popular Thai stir-fried noodle dish with shrimp, peanuts, and a tangy sauce.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g rice noodles",
+      "200g shrimp, peeled and deveined",
+      "2 cloves garlic, minced",
+      "1 egg",
+      "2 tablespoons tamarind paste",
+      "2 tablespoons fish sauce",
+      "1 tablespoon sugar",
+      "1 cup bean sprouts",
+      "2 green onions, chopped",
+      "1/4 cup peanuts, crushed",
+      "Cilantro and lime wedges for garnish",
+      "Oil for cooking"
+    ],
+    "steps": [
+      "1. Soak rice noodles in warm water until soft, then drain.",
+      "2. Heat oil in a pan and cook shrimp until pink. Remove and set aside.",
+      "3. In the same pan, sauté garlic and add the egg, scrambling until cooked.",
+      "4. Add noodles, tamarind paste, fish sauce, and sugar. Stir-fry for a few minutes.",
+      "5. Stir in shrimp, bean sprouts, and green onions.",
+      "6. Serve topped with peanuts, cilantro, and lime wedges."
+    ]
   },
   {
     "id": 5,
     "title": "Moussaka",
     "summary": "A Greek casserole layered with eggplant, ground meat, and béchamel sauce.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "2 eggplants, sliced",
+      "500g ground beef or lamb",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "400g canned tomatoes",
+      "1/2 cup red wine",
+      "1/2 teaspoon cinnamon",
+      "1/4 teaspoon nutmeg",
+      "2 tablespoons flour",
+      "2 cups milk",
+      "2 eggs",
+      "1 cup grated cheese (e.g., Parmesan)",
+      "Salt and pepper",
+      "Olive oil"
+    ],
+    "steps": [
+      "1. Preheat oven to 180°C (350°F).",
+      "2. Salt eggplant slices and let sit for 30 minutes. Rinse and pat dry.",
+      "3. Fry eggplant slices in olive oil until golden. Set aside.",
+      "4. In a pan, cook ground meat with onions, garlic, and spices until browned.",
+      "5. Add tomatoes and wine, simmering for 15 minutes.",
+      "6. In a saucepan, make béchamel sauce by melting butter, adding flour, and gradually whisking in milk until smooth. Stir in eggs and cheese.",
+      "7. Layer eggplant, meat sauce, and béchamel in a baking dish.",
+      "8. Bake for 45 minutes until golden and bubbly."
+    ]
   },
   {
     "id": 6,
     "title": "Sushi Rolls",
     "summary": "Japanese rice rolls filled with seafood, vegetables, and sometimes tropical fruit.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "2 cups sushi rice",
+      "1/4 cup rice vinegar",
+      "1 tablespoon sugar",
+      "Nori (seaweed sheets)",
+      "1 cucumber, sliced",
+      "1 avocado, sliced",
+      "200g sushi-grade fish (e.g., tuna or salmon)",
+      "Soy sauce",
+      "Wasabi",
+      "Pickled ginger"
+    ],
+    "steps": [
+      "1. Cook sushi rice according to package instructions.",
+      "2. Mix rice vinegar and sugar into the cooked rice and let cool.",
+      "3. Place a nori sheet on a bamboo mat and spread a thin layer of rice over it, leaving an edge.",
+      "4. Arrange cucumber, avocado, and fish in a line across the rice.",
+      "5. Roll tightly using the mat, then slice into pieces.",
+      "6. Serve with soy sauce, wasabi, and pickled ginger."
+    ]
   },
   {
     "id": 7,
     "title": "Tacos al Pastor",
     "summary": "Mexican street food with marinated pork, pineapple, and cilantro wrapped in a soft tortilla.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g pork shoulder, thinly sliced",
+      "1/4 cup pineapple juice",
+      "2 tablespoons adobo sauce",
+      "1 tablespoon chili powder",
+      "1 tablespoon paprika",
+      "1 teaspoon cumin",
+      "2 cloves garlic, minced",
+      "1 pineapple, peeled and sliced",
+      "Tortillas",
+      "Cilantro, chopped",
+      "Lime wedges"
+    ],
+    "steps": [
+      "1. Marinate pork in pineapple juice, adobo sauce, chili powder, paprika, cumin, and garlic for at least 2 hours.",
+      "2. Grill or cook pork until tender and slightly charred.",
+      "3. Grill pineapple slices until caramelized.",
+      "4. Slice pork and pineapple, and serve in tortillas with cilantro and lime."
+    ]
   },
   {
     "id": 8,
     "title": "Vegetarian Lasagna",
     "summary": "A hearty, meat-free lasagna layered with spinach, mushrooms, and ricotta cheese.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "9 lasagna noodles",
+      "2 cups spinach",
+      "200g mushrooms, sliced",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "2 cups ricotta cheese",
+      "1 cup grated mozzarella",
+      "1 cup grated Parmesan",
+      "2 cups marinara sauce",
+      "Salt and pepper",
+      "Olive oil"
+    ],
+    "steps": [
+      "1. Preheat oven to 180°C (350°F).",
+      "2. Cook lasagna noodles according to package instructions.",
+      "3. In a pan, sauté onions, garlic, and mushrooms in olive oil until soft.",
+      "4. Add spinach and cook until wilted.",
+      "5. In a baking dish, layer noodles, vegetable mixture, ricotta cheese, marinara sauce, and mozzarella.",
+      "6. Repeat layers and top with Parmesan cheese.",
+      "7. Bake for 30 minutes until bubbly and golden."
+    ]
   },
   {
     "id": 9,
     "title": "Ceviche",
     "summary": "A South American seafood dish made from fresh fish marinated in citrus juices.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g fresh fish fillets, diced",
+      "1/2 cup lime juice",
+      "1/4 cup lemon juice",
+      "1 red onion, finely chopped",
+      "1 tomato, diced",
+      "1 cucumber, diced",
+      "1 avocado, diced",
+      "1 jalapeño, finely chopped",
+      "Cilantro, chopped",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "1. Marinate fish in lime and lemon juice for 1-2 hours until opaque.",
+      "2. Mix in red onion, tomato, cucumber, avocado, and jalapeño.",
+      "3. Season with salt, pepper, and cilantro.",
+      "4. Serve chilled with tortilla chips or tostadas."
+    ]
   },
   {
     "id": 10,
     "title": "Butter Chicken",
     "summary": "A rich and creamy curry made with tender chicken pieces and aromatic spices.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g chicken breast, cut into pieces",
+      "1 cup plain yogurt",
+      "1 tablespoon lemon juice",
+      "2 tablespoons butter",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 tablespoon ginger, minced",
+      "200g tomato puree",
+      "1 cup cream",
+      "1 tablespoon garam masala",
+      "1 teaspoon turmeric",
+      "1 teaspoon cumin",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "1. Marinate chicken in yogurt and lemon juice for at least 1 hour.",
+      "2. In a pan, melt butter and cook onions, garlic, and ginger until soft.",
+      "3. Add tomato puree, garam masala, turmeric, and cumin. Cook for 5 minutes.",
+      "4. Add chicken and cook until fully cooked.",
+      "5. Stir in cream and simmer for 10 minutes. Season with salt and pepper."
+    ]
   },
   {
     "id": 11,
     "title": "Fettuccine Alfredo",
     "summary": "Italian pasta tossed with a creamy parmesan cheese sauce.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g fettuccine",
+      "1 cup heavy cream",
+      "1/2 cup butter",
+      "1 cup grated Parmesan cheese",
+      "2 cloves garlic, minced",
+      "Salt and pepper",
+      "Parsley for garnish"
+    ],
+    "steps": [
+      "1. Cook fettuccine according to package instructions.",
+      "2. In a pan, melt butter and cook garlic until fragrant.",
+      "3. Add heavy cream and simmer for 5 minutes.",
+      "4. Stir in Parmesan cheese until melted.",
+      "5. Toss pasta with the sauce and season with salt and pepper.",
+      "6. Garnish with parsley and serve."
+    ]
   },
   {
     "id": 12,
     "title": "Ratatouille",
     "summary": "A French Provençal stewed vegetable dish made with eggplant, zucchini, and tomatoes.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "1 eggplant, diced",
+      "1 zucchini, diced",
+      "1 bell pepper, diced",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "400g canned tomatoes",
+      "1/4 cup olive oil",
+      "1 teaspoon dried thyme",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "1. Heat olive oil in a pan and sauté onions and garlic until soft.",
+      "2. Add eggplant, zucchini, and bell pepper. Cook until tender.",
+      "3. Stir in tomatoes and thyme, and simmer for 20 minutes.",
+      "4. Season with salt and pepper to taste, and serve."
+    ]
   },
   {
     "id": 13,
     "title": "Chicken Parmesan",
     "summary": "Breaded chicken cutlets covered with marinara sauce and melted cheese.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "4 chicken breasts, pounded thin",
+      "1 cup flour",
+      "2 eggs, beaten",
+      "1 cup breadcrumbs",
+      "1 cup marinara sauce",
+      "1 cup mozzarella cheese",
+      "1/4 cup Parmesan cheese",
+      "Salt and pepper",
+      "Oil for frying"
+    ],
+    "steps": [
+      "1. Preheat oven to 180°C (350°F).",
+      "2. Bread chicken breasts by coating in flour, dipping in beaten eggs, and then breadcrumbs.",
+      "3. Fry chicken in oil until golden and cooked through.",
+      "4. Place chicken in a baking dish, top with marinara sauce and cheeses.",
+      "5. Bake for 20 minutes until cheese is melted and bubbly."
+    ]
   },
   {
     "id": 14,
     "title": "Goulash",
     "summary": "A Hungarian stew of meat and vegetables, seasoned with paprika and other spices.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g beef stew meat, cubed",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "2 tablespoons paprika",
+      "1 teaspoon caraway seeds",
+      "1 bell pepper, chopped",
+      "2 tomatoes, diced",
+      "4 cups beef broth",
+      "2 potatoes, diced",
+      "Salt and pepper",
+      "Oil for cooking"
+    ],
+    "steps": [
+      "1. Heat oil in a pot and cook beef until browned.",
+      "2. Add onions and garlic and sauté until soft.",
+      "3. Stir in paprika, caraway seeds, bell pepper, and tomatoes.",
+      "4. Add beef broth and potatoes, and simmer for 1 hour.",
+      "5. Season with salt and pepper and serve."
+    ]
   },
   {
     "id": 15,
     "title": "Peking Duck",
     "summary": "A famous Chinese dish featuring roasted duck with crispy skin and tender meat.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "1 whole duck",
+      "1 tablespoon five-spice powder",
+      "1 tablespoon soy sauce",
+      "2 tablespoons honey",
+      "1/4 cup rice vinegar",
+      "Pancakes or steamed buns for serving",
+      "Cucumber and scallions for garnish"
+    ],
+    "steps": [
+      "1. Preheat oven to 220°C (425°F).",
+      "2. Rub duck with five-spice powder, soy sauce, and rice vinegar.",
+      "3. Roast duck in the oven for 1 hour, brushing with honey every 20 minutes.",
+      "4. Let duck rest before carving. Serve with pancakes or buns, cucumber, and scallions."
+    ]
   },
   {
     "id": 16,
     "title": "Shakshuka",
     "summary": "A North African dish of poached eggs in a spiced tomato and pepper sauce.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 red bell pepper, chopped",
+      "400g canned tomatoes",
+      "1 teaspoon cumin",
+      "1 teaspoon paprika",
+      "1/2 teaspoon chili powder",
+      "4 eggs",
+      "Salt and pepper",
+      "Olive oil",
+      "Fresh cilantro for garnish"
+    ],
+    "steps": [
+      "1. Heat olive oil in a pan and cook onions, garlic, and bell pepper until soft.",
+      "2. Stir in tomatoes and spices, simmering for 10 minutes.",
+      "3. Make wells in the sauce and crack eggs into them.",
+      "4. Cover and cook until eggs are done to your liking.",
+      "5. Season with salt and pepper, garnish with cilantro, and serve."
+    ]
   },
   {
     "id": 17,
     "title": "Lamb Rogan Josh",
     "summary": "An aromatic lamb curry from Kashmir, slow-cooked with a blend of spices.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g lamb, cubed",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 tablespoon ginger, minced",
+      "1 cup yogurt",
+      "2 tablespoons Rogan Josh spice mix",
+      "400g canned tomatoes",
+      "1 cup beef broth",
+      "Salt and pepper",
+      "Oil for cooking"
+    ],
+    "steps": [
+      "1. Heat oil in a pot and cook lamb until browned.",
+      "2. Add onions, garlic, and ginger and sauté until soft.",
+      "3. Stir in spice mix and cook for 2 minutes.",
+      "4. Add tomatoes, yogurt, and beef broth. Simmer for 1 hour until lamb is tender.",
+      "5. Season with salt and pepper, and serve with rice or naan."
+    ]
   },
   {
     "id": 18,
     "title": "Falafel",
     "summary": "Middle Eastern deep-fried balls made from ground chickpeas and herbs.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "1 cup dried chickpeas",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup fresh parsley, chopped",
+      "1/2 cup fresh cilantro, chopped",
+      "1 teaspoon cumin",
+      "1 teaspoon coriander",
+      "1/2 teaspoon baking powder",
+      "Salt and pepper",
+      "Oil for frying"
+    ],
+    "steps": [
+      "1. Soak chickpeas overnight in water, then drain.",
+      "2. Blend chickpeas, onion, garlic, parsley, cilantro, cumin, coriander, and baking powder in a food processor.",
+      "3. Form mixture into balls.",
+      "4. Heat oil in a pan and fry falafel until golden brown.",
+      "5. Drain on paper towels and serve with tahini sauce or pita bread."
+    ]
   },
   {
     "id": 19,
     "title": "Pho",
     "summary": "Vietnamese noodle soup with broth, rice noodles, herbs, and beef or chicken.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "1 whole chicken or 500g beef bones",
+      "1 onion, halved",
+      "1 ginger root, sliced",
+      "2 star anise",
+      "1 cinnamon stick",
+      "4 cloves",
+      "1 tablespoon fish sauce",
+      "200g rice noodles",
+      "Fresh herbs (cilantro, basil) for garnish",
+      "Bean sprouts, lime wedges, and jalapeños for serving"
+    ],
+    "steps": [
+      "1. In a large pot, simmer chicken or beef bones with onion, ginger, star anise, cinnamon, and cloves for 1-2 hours.",
+      "2. Strain the broth and return to pot. Season with fish sauce.",
+      "3. Cook rice noodles according to package instructions.",
+      "4. Divide noodles among bowls and ladle hot broth over them.",
+      "5. Garnish with fresh herbs, bean sprouts, lime wedges, and jalapeños."
+    ]
   },
   {
     "id": 20,
     "title": "Paella",
     "summary": "A Spanish rice dish with seafood, saffron, and vegetables.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g paella rice",
+      "1/4 cup olive oil",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 red bell pepper, chopped",
+      "200g tomatoes, chopped",
+      "1 cup green peas",
+      "200g shrimp",
+      "200g mussels",
+      "1/2 teaspoon saffron threads",
+      "2 cups chicken or vegetable broth",
+      "Salt and pepper",
+      "Lemon wedges for garnish"
+    ],
+    "steps": [
+      "1. Heat olive oil in a pan and cook onion and garlic until soft.",
+      "2. Stir in bell pepper, tomatoes, and rice, cooking for 2 minutes.",
+      "3. Add saffron and broth, and simmer for 10 minutes.",
+      "4. Add shrimp, mussels, and green peas. Cook until seafood is cooked through and rice is tender.",
+      "5. Season with salt and pepper, and garnish with lemon wedges."
+    ]
   },
   {
     "id": 21,
     "title": "Baklava",
     "summary": "A sweet Turkish pastry made of layers of filo filled with chopped nuts and honey.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "1 package filo pastry",
+      "200g mixed nuts (walnuts, pistachios, almonds), chopped",
+      "1 cup melted butter",
+      "1 cup honey",
+      "1 cup sugar",
+      "1 teaspoon cinnamon"
+    ],
+    "steps": [
+      "1. Preheat oven to 180°C (350°F).",
+      "2. Brush a baking dish with melted butter and layer with filo pastry, brushing each layer with butter.",
+      "3. Sprinkle chopped nuts between layers.",
+      "4. Bake for 45 minutes until golden and crisp.",
+      "5. Heat honey and sugar until dissolved, then pour over the hot baklava.",
+      "6. Let cool before cutting into pieces."
+    ]
   },
   {
     "id": 22,
     "title": "Gazpacho",
     "summary": "A cold Spanish tomato-based soup, served with diced vegetables.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "6 ripe tomatoes",
+      "1 cucumber, peeled and diced",
+      "1 bell pepper, diced",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1/4 cup olive oil",
+      "2 tablespoons red wine vinegar",
+      "Salt and pepper",
+      "Fresh basil for garnish"
+    ],
+    "steps": [
+      "1. Blend tomatoes until smooth.",
+      "2. Mix in cucumber, bell pepper, onion, and garlic.",
+      "3. Stir in olive oil, red wine vinegar, salt, and pepper.",
+      "4. Chill in the refrigerator for at least 2 hours.",
+      "5. Garnish with fresh basil before serving."
+    ]
   },
   {
     "id": 23,
     "title": "Chicken Shawarma",
     "summary": "Marinated chicken roasted on a spit, served with pita bread and garlic sauce.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g chicken thighs",
+      "2 tablespoons shawarma spice mix",
+      "1 tablespoon olive oil",
+      "4 pita breads",
+      "Garlic sauce for serving",
+      "Fresh vegetables (tomato, cucumber, lettuce) for serving"
+    ],
+    "steps": [
+      "1. Marinate chicken in shawarma spice mix and olive oil for at least 1 hour.",
+      "2. Preheat oven to 200°C (400°F).",
+      "3. Roast chicken in the oven for 25-30 minutes until fully cooked.",
+      "4. Slice chicken thinly and serve in pita breads with garlic sauce and fresh vegetables."
+    ]
   },
   {
     "id": 24,
     "title": "Clam Chowder",
     "summary": "A rich, creamy soup made with clams, potatoes, and onions.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g clams, cleaned",
+      "2 tablespoons butter",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "2 potatoes, peeled and diced",
+      "1 cup heavy cream",
+      "2 cups chicken broth",
+      "Salt and pepper",
+      "Chopped parsley for garnish"
+    ],
+    "steps": [
+      "1. In a pot, melt butter and cook onions and garlic until soft.",
+      "2. Add potatoes and cook for 5 minutes.",
+      "3. Pour in chicken broth and simmer until potatoes are tender.",
+      "4. Add clams and cream, and cook for an additional 5 minutes.",
+      "5. Season with salt and pepper, and garnish with chopped parsley before serving."
+    ]
   },
   {
     "id": 25,
     "title": "Jambalaya",
     "summary": "A spicy Louisiana dish made with rice, sausage, shrimp, and vegetables.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g rice",
+      "200g sausage, sliced",
+      "200g shrimp, peeled and deveined",
+      "1 onion, chopped",
+      "1 bell pepper, diced",
+      "2 cloves garlic, minced",
+      "1 can diced tomatoes",
+      "2 cups chicken broth",
+      "1 teaspoon paprika",
+      "1/2 teaspoon cayenne pepper",
+      "Salt and pepper",
+      "Olive oil"
+    ],
+    "steps": [
+      "1. Heat olive oil in a large pot and cook sausage until browned.",
+      "2. Add onion, bell pepper, and garlic, and cook until soft.",
+      "3. Stir in rice, tomatoes, chicken broth, paprika, and cayenne pepper.",
+      "4. Bring to a boil, then reduce heat and simmer for 20 minutes.",
+      "5. Add shrimp and cook until pink and cooked through.",
+      "6. Season with salt and pepper and serve."
+    ]
   },
   {
     "id": 26,
     "title": "Coq au Vin",
     "summary": "A classic French dish of chicken braised with wine, mushrooms, and bacon.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "1 whole chicken, cut into pieces",
+      "4 slices bacon, chopped",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 cup red wine",
+      "1 cup chicken broth",
+      "200g mushrooms, sliced",
+      "1 tablespoon tomato paste",
+      "1 teaspoon dried thyme",
+      "Salt and pepper",
+      "Olive oil"
+    ],
+    "steps": [
+      "1. In a large pot, cook bacon until crispy. Remove and set aside.",
+      "2. Brown chicken pieces in bacon fat and set aside.",
+      "3. In the same pot, cook onions and garlic until soft.",
+      "4. Stir in tomato paste and cook for 2 minutes.",
+      "5. Add wine, chicken broth, and thyme, and bring to a boil.",
+      "6. Return chicken and bacon to the pot, and add mushrooms.",
+      "7. Cover and simmer for 1 hour until chicken is tender.",
+      "8. Season with salt and pepper before serving."
+    ]
   },
   {
     "id": 27,
     "title": "Ramen",
     "summary": "A Japanese noodle soup with meat, eggs, and various toppings in a flavorful broth.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g ramen noodles",
+      "4 cups chicken or vegetable broth",
+      "200g pork belly or chicken, thinly sliced",
+      "2 cloves garlic, minced",
+      "1 tablespoon soy sauce",
+      "1 tablespoon miso paste",
+      "2 eggs",
+      "1 cup bean sprouts",
+      "1 cup sliced mushrooms",
+      "Green onions, sliced",
+      "Nori seaweed, cut into strips"
+    ],
+    "steps": [
+      "1. Cook ramen noodles according to package instructions and set aside.",
+      "2. In a pot, heat broth with garlic, soy sauce, and miso paste until simmering.",
+      "3. Add pork belly or chicken and cook until fully cooked.",
+      "4. In a separate pot, boil eggs for 6-7 minutes, then peel and set aside.",
+      "5. Add mushrooms and bean sprouts to the broth and cook until tender.",
+      "6. Divide noodles among bowls, ladle hot broth over them, and top with sliced meat, eggs, green onions, and nori."
+    ]
   },
   {
     "id": 28,
     "title": "Biryani",
     "summary": "An Indian dish made with spiced rice and meat, often chicken or lamb.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g basmati rice",
+      "500g chicken or lamb, cut into pieces",
+      "1 cup yogurt",
+      "2 onions, thinly sliced",
+      "2 cloves garlic, minced",
+      "1 tablespoon ginger, minced",
+      "2 tomatoes, chopped",
+      "1/4 cup cooking oil",
+      "1 tablespoon biryani spice mix",
+      "1/4 teaspoon saffron threads",
+      "2 cups water",
+      "Fresh cilantro for garnish",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "1. Marinate meat in yogurt, biryani spice mix, salt, and pepper for at least 1 hour.",
+      "2. Heat oil in a pot and cook onions, garlic, and ginger until golden brown.",
+      "3. Add tomatoes and cook until soft.",
+      "4. Add marinated meat and cook until browned.",
+      "5. Stir in rice and saffron, then add water.",
+      "6. Cover and cook on low heat until rice is tender and meat is cooked through.",
+      "7. Garnish with fresh cilantro before serving."
+    ]
   },
   {
     "id": 29,
     "title": "Miso Soup",
     "summary": "A traditional Japanese soup with tofu, seaweed, and miso paste.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "4 cups dashi or vegetable broth",
+      "3 tablespoons miso paste",
+      "200g tofu, cubed",
+      "1 cup wakame seaweed, soaked and drained",
+      "2 green onions, sliced"
+    ],
+    "steps": [
+      "1. Heat dashi or vegetable broth in a pot.",
+      "2. Dissolve miso paste in a small amount of warm broth and then stir into the pot.",
+      "3. Add tofu and wakame seaweed and cook until tofu is heated through.",
+      "4. Garnish with sliced green onions before serving."
+    ]
   },
   {
     "id": 30,
     "title": "Stuffed Bell Peppers",
     "summary": "Bell peppers filled with rice, vegetables, and ground meat, baked until tender.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "4 bell peppers, tops cut off and seeds removed",
+      "200g ground beef or turkey",
+      "1 cup cooked rice",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 can diced tomatoes",
+      "1 cup shredded cheese",
+      "1 tablespoon olive oil",
+      "Salt and pepper",
+      "1 teaspoon dried oregano"
+    ],
+    "steps": [
+      "1. Preheat oven to 180°C (350°F).",
+      "2. Heat olive oil in a pan and cook onion and garlic until soft.",
+      "3. Add ground meat and cook until browned.",
+      "4. Stir in cooked rice, diced tomatoes, salt, pepper, and oregano.",
+      "5. Fill bell peppers with the mixture and place in a baking dish.",
+      "6. Top with shredded cheese and bake for 30 minutes until peppers are tender."
+    ]
   }
 ]

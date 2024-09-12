@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import data from'../data.json'
+import { Link } from 'react-router-dom'
 
 function HomePage() {
 
@@ -19,7 +20,8 @@ function HomePage() {
         {
             recipes.slice(0,visibleCount).map(recipe=>{
                 return(
-                    <div key={recipe.id} className='flex flex-col bg-[#FFFFFF] max-w-[150px] rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:scale-110 cursor-pointer transition-transform duration-300 ease-in-out'>
+                    <Link to={`/recipe-details/${recipe.id}`} key={recipe.id}>
+                        <div  className='flex flex-col bg-[#FFFFFF] max-w-[150px] rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:scale-110 cursor-pointer transition-transform duration-300 ease-in-out'>
                     <img 
                         className='w-[150px] h-[150px]'
                         src={recipe.image} alt={recipe.title} />
@@ -28,6 +30,7 @@ function HomePage() {
                         <p className='text-blue-400 font-semibold' >{recipe.summary}</p>
                     </div>
                 </div>
+                    </Link>
                 )
             })
         }
