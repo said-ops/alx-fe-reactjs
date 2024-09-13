@@ -15,22 +15,22 @@ function AddRecipeForm() {
     }
     const handleSubmit =(e)=>{
         e.preventDefault()
-        if(validation()){
+        if(validate()){
             console.log(newRecipe)
             alert('new recipe added')
             setNewRecipe({
                 title:'',ingredients:'',instructions:''
             })
-         if(!validation())
+         if(!validate())
             {
                 alert('invalid form ')
             }   
         }
     }
-    const [error,setError]=useState({})
+    const [errors,setErrors]=useState({})
     const [fieldError,setHasError]=useState(false)
 
-    const validation = ()=>{
+    const validate = ()=>{
 
         const errMsg ={title:'',instructions:'',ingredients:''}
         let hasError=false
@@ -55,7 +55,7 @@ function AddRecipeForm() {
         errMsg.ingredients = 'Enter at least two ingredients';
         hasError=true
       }
-    setError(errMsg)
+    setErrors(errMsg)
     setHasError(hasError)
     return !hasError
     }
@@ -81,7 +81,7 @@ function AddRecipeForm() {
             value={newRecipe.title}
             onChange={e=>handleChange(e)}
              />
-             {error.title?<span className='text-red-700 '>{error.title}</span>:''}
+             {errors.title?<span className='text-red-700 '>{errors.title}</span>:''}
 
             <label htmlFor="ingredients">Recipe Ingredients</label>
             <textarea 
@@ -90,7 +90,7 @@ function AddRecipeForm() {
             value={newRecipe.ingredients}
             onChange={e=>handleChange(e)}
              />
-             {error.ingredients?<span className='text-red-700 '>{error.ingredients}</span>:''}
+             {errors.ingredients?<span className='text-red-700 '>{errors.ingredients}</span>:''}
 
             <label htmlFor="instructions">Recipe steps</label>
             <textarea 
@@ -99,7 +99,7 @@ function AddRecipeForm() {
             value={newRecipe.instructions}
             onChange={e=>handleChange(e)}
              />
-             {error.instructions?<span className='text-red-700 '>{error.instructions}</span>:''}
+             {errors.instructions?<span className='text-red-700 '>{errors.instructions}</span>:''}
 
              <button 
              className='rounded-md bg-cyan-500 p-4 font-bold text-blue-900 hover:bg-cyan-400 hover:text-blue-600'
