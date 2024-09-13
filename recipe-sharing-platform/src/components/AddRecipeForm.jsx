@@ -9,8 +9,8 @@ function AddRecipeForm() {
         instructions:''
     })
     const handleChange = (e)=>{
-        const {name,value}=e.target
-        setNewRecipe({...newRecipe,[name]:value})
+        const {name}=e.target
+        setNewRecipe({...newRecipe,[name]:e.target.value})
 
     }
     const handleSubmit =(e)=>{
@@ -92,7 +92,7 @@ function AddRecipeForm() {
              />
              {error.ingredients?<span className='text-red-700 '>{error.ingredients}</span>:''}
 
-            <label htmlFor="instructions">Recipe Instructions</label>
+            <label htmlFor="instructions">Recipe steps</label>
             <textarea 
             name='instructions'
             id='instructions'
