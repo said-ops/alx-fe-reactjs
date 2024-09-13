@@ -15,6 +15,12 @@ function HomePage() {
   return (
     <>
     <h1 className='text-4xl text-blue-800 font-bold'>Home Page</h1>
+
+    <nav>
+        <Link to='add-recipe-form'>
+          <button className='bg-slate-600 text-blue-500 rounded-2xl w-[6rem] h-[4rem] p-1 ml-3 mt-4 hover:shadow-md hover:bg-slate-300'>Add New Recipe</button>
+        </Link>
+      </nav>
     <section className='grid  place-items-center grid-cols-1 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 lg:gap-4 xl:grid-cols-6  p-4 md:gap-2 mt-4'>
         {/* cards goes here */}
         {

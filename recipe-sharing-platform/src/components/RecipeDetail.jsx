@@ -17,31 +17,32 @@ function RecipeDetail() {
             <img 
             className='w-[150px] h-[150px]'
             src={recipe.image} alt={recipe.title} />
-            <h2 className='text-xl text-blue-400 font-bold'>instructions</h2>
-            <div className='shadow-xl p-2 rounded-sm'>
-                {/* steps goes here */}
-                {recipe.steps? (
-                    recipe.steps.map((step,index)=>
-                    <p 
-                    className='text-slate-600'
-                    key={index}>{step}</p>)
-                ):
-                <p>no step </p>}
-            </div>
-            <h2 className='text-xl text-blue-400 font-bold'>Ingredients</h2>
-            <div>
+            <h2 className='text-xl text-blue-400 font-bold'>ingredients</h2>
+            <div className='shadow-xl p-2 rounded-sm w-fit'>
                 {/* Ingredients goes here */}
-                
-            <div className='shadow-xl p-2 rounded-sm'>
-                {/* steps goes here */}
-                {recipe.ingredients
-                ? (
+                {recipe.ingredients? (
                     recipe.ingredients.map((step,index)=>
                     <p 
                     className='text-slate-600'
                     key={index}>{step}</p>)
                 ):
                 <p>no ingredients </p>}
+            </div>
+
+            <h2 className='text-xl text-blue-400 font-bold'>Instructions</h2>
+            <div>
+                
+                {/* steps goes here */}
+            <div className='shadow-xl p-2 rounded-sm w-fit'>
+                
+                {recipe.steps
+                ? (
+                    recipe.steps.map((step,index)=>
+                    <p 
+                    className='text-slate-600'
+                    key={index}>{step}</p>)
+                ):
+                <p>no steps </p>}
             </div>
             </div>
         </div>
