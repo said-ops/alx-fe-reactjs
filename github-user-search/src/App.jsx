@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Search from './components/Search'
 function App() {
   return (
-    <h1>DevFinder</h1>
+    <>
+    <Search />
+    </>
   )
 }
 
