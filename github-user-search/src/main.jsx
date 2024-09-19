@@ -1,7 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
+import './reset.css'
 import './index.css'
+
+// document.getElementById('root').classList.add('w-[1440px]')
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
