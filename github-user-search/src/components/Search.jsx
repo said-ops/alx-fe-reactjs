@@ -94,6 +94,7 @@ function Search() {
             </div>)}
             {error&&('Looks like we cant find the user')}
             {isLoading&&'Loading...'}
+            {!data&&!isLoading&&!error&&('Look For Devs')}
             
           </div>
 
