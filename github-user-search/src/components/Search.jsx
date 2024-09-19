@@ -4,7 +4,9 @@ import fetchUserData from '../services/githubService'
 function Search() {
 
   const [username,setUser]=useState('')
-  const [data,setData]=useState([])
+  const [data,setData]=useState(null)
+  const [isLoading,setIsLoading]=useState(null)
+  const [error,setError]=useState(false)
 
   // useEffect( ()=>{
   //   // console.log('GitHub Token:', import.meta.env.VITE_GITHUB_API_KEY);
@@ -17,8 +19,16 @@ function Search() {
 
   //fetch data based on user input
   const fetchData = async (searchTerm)=>{
-    const data= await fetchUserData(searchTerm)
-      setData(data)
+    setIsLoading(true)
+    setData(null)
+    setError(false)
+    const fetchedData = await fetchUserData(searchTerm);
+    if (fetchedData === 'Error while fetching') {
+      setError(true);
+    } else {
+      setData(fetchedData);
+    }
+    setIsLoading(false);
    }
 
   //handle submit and change
@@ -68,8 +78,23 @@ function Search() {
           </form>
           </div>
           {/* display results here */}
-          <div className='flex flex-col gap-8 md:p-8 bg-[#33405f] shadow-sm rounded-md p-4' >
-
+          <div className='flex flex-col gap-8 md:p-8 md:min-w-[465px] w-[300px]  bg-[#33405f] shadow-sm rounded-md p-4' >
+          {data &&!isLoading && !error&&(
+            <div className='flex flex-col md:flex-row justify-between items-center'>
+              <img 
+              src={data.avatar_url} 
+              width="100px" 
+              alt="" 
+              className='rounded-full' />
+              <div className='flex flex-col gap-4'>
+                <p>Username:<span className='text-indigo-500'>{data.login}</span></p>
+                <span>Public repos:<span  className='text-indigo-500'>{data.public_repos}</span></span>
+                <a href={data.html_url} target='_blank' className='text-indigo-500'>View Profile</a>
+              </div>
+            </div>)}
+            {error&&('Looks like we cant find the user')}
+            {isLoading&&'Loading...'}
+            
           </div>
 
       </div>

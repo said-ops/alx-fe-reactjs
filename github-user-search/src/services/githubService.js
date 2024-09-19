@@ -10,6 +10,7 @@ const fetchUserData = async (searchTerm) => {
     return response.data;
   } catch (error) {
     console.log('Error while fetching:', error);
+    return 'Error while fetching'
   }
 };
 
