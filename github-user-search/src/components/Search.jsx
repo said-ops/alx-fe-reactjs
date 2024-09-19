@@ -35,38 +35,37 @@ function Search() {
 
   return (
     <>
-      <div className="container">
-
+      <div className='container h-screen w-full bg-[#141c2e] font-main font-semibold text-white'>
         <div>
-          <h2>DevFinder</h2>
-          <div>
-            <span>Light</span>
-            <img src="./assets/icon-sun.svg" alt="light mode" />
+          <div >
+            <h2>DevFinder</h2>
+            <div>
+              <span>Light</span>
+              <img src="./assets/icon-sun.svg" alt="light mode" />
+            </div>
           </div>
-        </div>
-        {/* form goes here */}
-        <form 
-          action="#"
-          onSubmit={(e)=>handleSubmit(e)}
-          >
-           <div>
-            <label htmlFor="username">
-              <img src="./assets/search-icon.svg" alt="search" />
-                <input 
-                type="text"
-                name='username'
-                id='username'
-                value={username}
-                onChange={e=>handlechange(e)} 
-                />
-            </label>
-            <button type='submit'>Search</button>
-           </div>
+          {/* form goes here */}
+          <form 
+            action="#"
+            onSubmit={(e)=>handleSubmit(e)}
+            >
+            <div>
+              <label htmlFor="username">
+                <img src="./assets/search-icon.svg" alt="search" />
+                  <input 
+                  type="text"
+                  name='username'
+                  id='username'
+                  value={username}
+                  onChange={e=>handlechange(e)} 
+                  />
+              </label>
+              <button type='submit'>Search</button>
+            </div>
 
-        </form>
+          </form>
+          </div>
       </div>
-
-      
     </>
   )
 }
