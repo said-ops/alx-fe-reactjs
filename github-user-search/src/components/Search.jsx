@@ -10,14 +10,14 @@ function Search() {
   const [visibleCount,setCount]=useState(5)
   const [theme,settheme]=useState('dark')
 
-  useEffect( ()=>{
-    // console.log('GitHub Token:', import.meta.env.VITE_GITHUB_API_KEY);
-   const fetchData = async ()=>{
-    const data= await fetchUserData('said-ops','location')
-      console.log(data.items)
-   }
-   fetchData();
-  },[])
+  // useEffect( ()=>{
+  //   // console.log('GitHub Token:', import.meta.env.VITE_GITHUB_API_KEY);
+  //  const fetchData = async ()=>{
+  //   const data= await fetchUserData('said-ops','location')
+  //     // console.log(data.items)
+  //  }
+  //  fetchData();
+  // },[])
 
   //fetch data based on user input
   const fetchData = async (searchTerm,cas='location')=>{

@@ -11,7 +11,7 @@ const fetchUserData = async (searchTerm,value) => {
         });
         return response.data;
       } catch (error) {
-        console.log('Error while fetching:', error);
+        // console.log('Error while fetching:', error);
         return 'Error while fetching'
       }
       
@@ -24,7 +24,7 @@ const fetchUserData = async (searchTerm,value) => {
         });
         return response.data;
       } catch (error) {
-        console.log('Error while fetching:', error);
+        // console.log('Error while fetching:', error);
         return 'Error while fetching'
       }  
 
@@ -37,7 +37,7 @@ const fetchUserData = async (searchTerm,value) => {
         });
         return response.data;
       } catch (error) {
-        console.log('Error while fetching:', error);
+        // console.log('Error while fetching:', error);
         return 'Error while fetching'
       }
   
