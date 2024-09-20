@@ -7,15 +7,17 @@ function Search() {
   const [data,setData]=useState(null)
   const [isLoading,setIsLoading]=useState(null)
   const [error,setError]=useState(false)
+  const [visibleCount,setCount]=useState(5)
+  const [theme,settheme]=useState('dark')
 
-  // useEffect( ()=>{
-  //   // console.log('GitHub Token:', import.meta.env.VITE_GITHUB_API_KEY);
-  //  const fetchData = async ()=>{
-  //   const data= await fetchUserData('said-ops')
-  //     console.log(data.items)
-  //  }
-  //  fetchData();
-  // },[])
+  useEffect( ()=>{
+    // console.log('GitHub Token:', import.meta.env.VITE_GITHUB_API_KEY);
+   const fetchData = async ()=>{
+    const data= await fetchUserData('said-ops','location')
+      console.log(data.items)
+   }
+   fetchData();
+  },[])
 
   //fetch data based on user input
   const fetchData = async (searchTerm,cas='location')=>{
@@ -45,14 +47,19 @@ function Search() {
 
   return (
     <>
-      <div className='min-h-screen w-[100%] bg-[#141c2e] font-main p-4 font-semibold text-white flex flex-col justify-center items-center gap-8'>
+      <div className={`min-h-screen w-[100%] ${theme==='dark'?'bg-[#141c2e]':'bg-white'} font-main p-4 font-semibold text-white flex flex-col justify-center items-center gap-8`}>
         {/* search here */}
-        <div className='flex flex-col gap-8 md:p-8 bg-[#33405f] shadow-sm rounded-md p-4 '>
+        <div className={`flex flex-col gap-8 md:p-8 bg-[#33405f] shadow-sm rounded-md p-4`}>
           <div  className='flex justify-between items-center'>
             <h2>DevFinder</h2>
             <div className='flex justify-between items-center gap-4'>
-              <span>Light</span>
-              <img src="./assets/icon-sun.svg" alt="light mode" />
+              <span>{theme==='dark'?'Light':'Dark'}</span>
+              <img 
+              className='cursor-pointer'
+              onClick={()=>{if(theme==='dark')settheme('light')
+                else  settheme('dark')
+              }}
+              src={`${theme==='dark'?'./assets/icon-sun.svg':'./assets/icon-moon.svg'}`} alt="light mode" />
             </div>
           </div>
           {/* form goes here */}
@@ -73,14 +80,14 @@ function Search() {
                   onChange={e=>handlechange(e)} 
                   />
               </label>
-              <button type='submit' className='p-4 rounded-sm bg-[#0079fe] md:max-w-fit w-full'>Search</button>
+              <button type='submit' className='p-4 rounded-md bg-indigo-500 md:max-w-fit w-full'>Search</button>
             </div>
           </form>
           </div>
           {/* display results here */}
           
           {
-            data&&!isLoading&&!error&&Array.isArray(data.items)?data.items.map((user,index)=>{
+            data&&!isLoading&&!error&&Array.isArray(data.items)?data.items.slice(0,visibleCount).map((user,index)=>{
               return(
                 <div key={index} className='flex flex-col gap-8 md:p-8 md:min-w-[465px] w-[300px]  bg-[#33405f] shadow-sm rounded-md p-4' >
                   <div className='flex flex-col md:flex-row justify-between items-center'>
@@ -104,7 +111,9 @@ function Search() {
             {isLoading&&'Loading...'}
             {!data&&!isLoading&&!error&&('Look For Devs')}
           </div>
-
+          <button
+          className='p-4 rounded-md bg-indigo-500'
+          onClick={()=>setCount(visibleCount+5)}>Load More</button>
       </div>
     </>
   )
