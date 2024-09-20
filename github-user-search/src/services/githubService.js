@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const fetchUserData = async (searchTerm) => {
   try {
-    const response = await axios.get(`https://api.github.com/users/${searchTerm}`, {
+    const response = await axios.get(`https://api.github.com/search/users?q=${searchTerm}`, {
       headers: {
         Authorization: `token ${import.meta.env.VITE_GITHUB_API_KEY}`
       },

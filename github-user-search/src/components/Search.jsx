@@ -12,7 +12,7 @@ function Search() {
   //   // console.log('GitHub Token:', import.meta.env.VITE_GITHUB_API_KEY);
   //  const fetchData = async ()=>{
   //   const data= await fetchUserData('said-ops')
-  //     console.log(data)
+  //     console.log(data.items)
   //  }
   //  fetchData();
   // },[])
@@ -39,13 +39,13 @@ function Search() {
     e.preventDefault()
     if(username){
       fetchData(username)
-      console.log(data)
+      // console.log(data)
     }
   }
 
   return (
     <>
-      <div className='h-screen w-[100%] bg-[#141c2e] font-main p-4 font-semibold text-white flex flex-col justify-center items-center gap-8'>
+      <div className='min-h-screen w-[100%] bg-[#141c2e] font-main p-4 font-semibold text-white flex flex-col justify-center items-center gap-8'>
         {/* search here */}
         <div className='flex flex-col gap-8 md:p-8 bg-[#33405f] shadow-sm rounded-md p-4 '>
           <div  className='flex justify-between items-center'>
@@ -78,24 +78,31 @@ function Search() {
           </form>
           </div>
           {/* display results here */}
-          <div className='flex flex-col gap-8 md:p-8 md:min-w-[465px] w-[300px]  bg-[#33405f] shadow-sm rounded-md p-4' >
-          {data &&!isLoading && !error&&(
-            <div className='flex flex-col md:flex-row justify-between items-center'>
-              <img 
-              src={data.avatar_url} 
-              width="100px" 
-              alt="" 
-              className='rounded-full' />
-              <div className='flex flex-col gap-4'>
-                <p>Username:<span className='text-indigo-500'>{data.login}</span></p>
-                <span>Public repos:<span  className='text-indigo-500'>{data.public_repos}</span></span>
-                <a href={data.html_url} target='_blank' className='text-indigo-500'>View Profile</a>
-              </div>
-            </div>)}
+          
+          {
+            data&&!isLoading&&!error?data.items.map((user,index)=>{
+              return(
+                <div key={index} className='flex flex-col gap-8 md:p-8 md:min-w-[465px] w-[300px]  bg-[#33405f] shadow-sm rounded-md p-4' >
+                  <div className='flex flex-col md:flex-row justify-between items-center'>
+                    <img 
+                    src={user.avatar_url} 
+                    width="100px" 
+                    alt="" 
+                    className='rounded-full' />
+                    <div className='flex flex-col gap-4'>
+                      <p>Username:<span className='text-indigo-500'>{user.login}</span></p>
+                      <span>Scors:<span  className='text-indigo-500'>{user.score}</span></span>
+                      <a href={user.html_url} target='_blank' className='text-indigo-500'>View Profile</a>
+                    </div>
+                  </div>
+                </div>
+              )
+            }):''
+          }
+          <div className='flex flex-col gap-8 md:p-8 md:min-w-[465px] w-[300px]  bg-[#33405f] shadow-sm rounded-md p-4'>
             {error&&('Looks like we cant find the user')}
             {isLoading&&'Loading...'}
             {!data&&!isLoading&&!error&&('Look For Devs')}
-            
           </div>
 
       </div>
