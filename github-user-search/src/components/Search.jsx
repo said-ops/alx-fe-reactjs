@@ -18,11 +18,11 @@ function Search() {
   // },[])
 
   //fetch data based on user input
-  const fetchData = async (searchTerm)=>{
+  const fetchData = async (searchTerm,cas='location')=>{
     setIsLoading(true)
     setData(null)
     setError(false)
-    const fetchedData = await fetchUserData(searchTerm);
+    const fetchedData = await fetchUserData(searchTerm,cas);
     if (fetchedData === 'Error while fetching') {
       setError(true);
     } else {
@@ -38,7 +38,7 @@ function Search() {
   const handleSubmit = (e)=>{
     e.preventDefault()
     if(username){
-      fetchData(username)
+      fetchData(username,'location')
       // console.log(data)
     }
   }
@@ -80,7 +80,7 @@ function Search() {
           {/* display results here */}
           
           {
-            data&&!isLoading&&!error?data.items.map((user,index)=>{
+            data&&!isLoading&&!error&&Array.isArray(data.items)?data.items.map((user,index)=>{
               return(
                 <div key={index} className='flex flex-col gap-8 md:p-8 md:min-w-[465px] w-[300px]  bg-[#33405f] shadow-sm rounded-md p-4' >
                   <div className='flex flex-col md:flex-row justify-between items-center'>
@@ -91,7 +91,7 @@ function Search() {
                     className='rounded-full' />
                     <div className='flex flex-col gap-4'>
                       <p>Username:<span className='text-indigo-500'>{user.login}</span></p>
-                      <span>Scors:<span  className='text-indigo-500'>{user.score}</span></span>
+                      <span>Score:<span  className='text-indigo-500'>{user.score}</span></span>
                       <a href={user.html_url} target='_blank' className='text-indigo-500'>View Profile</a>
                     </div>
                   </div>
